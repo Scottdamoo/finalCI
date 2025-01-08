@@ -3,6 +3,3 @@ pandas
 numpy
 matplotlib
 seaborn
-unittest
-os
-patch
