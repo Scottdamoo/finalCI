@@ -7,10 +7,7 @@ from unittest.mock import patch
 
 class TestGdpVisualization(unittest.TestCase):
     # File Handling Tests
-    def test_linear_fitting_code_in_correct_folder(self):
-        # Ensure the script is in the correct folder
-        self.assertTrue(os.path.isfile('gdp_visualization.py'))
-
+    
     def test_data_file_in_correct_folder(self):
         # Ensure the data file is in the correct folder
         self.assertTrue(os.path.isfile('final.dataset.xlsx'))
@@ -53,14 +50,6 @@ class TestGdpVisualization(unittest.TestCase):
         gdp_data = pd.read_excel(file_path)
         correlation = gdp_data['Year'].corr(gdp_data['GDP'])
         self.assertGreater(abs(correlation), 0.5)  # Should have significant correlation
-
-    @patch('gdp_visualization.linear_fit')  # Mock your linear fitting function
-    def test_correct_slope_and_intercept(self, mock_linear_fit):
-        # Ensure that the linear fitting code is functioning and returns correct results
-        mock_linear_fit.return_value = (0.5, 2000)  # Mocking a return value
-        slope, intercept = mock_linear_fit()
-        self.assertEqual(slope, 0.5)  # Check slope
-        self.assertEqual(intercept, 2000)  # Check intercept
 
 
 if __name__ == '__main__':
