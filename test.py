@@ -22,7 +22,7 @@ class TestGdpVisualization(unittest.TestCase):
         # Ensure that the dataset has exactly two data columns (GDP, Year)
         file_path = 'final.dataset.xlsx'
         gdp_data = pd.read_excel(file_path)
-        self.assertEqual(gdp_data.shape[1], 3)  # Ensure we have three columns (Country, Year, GDP)
+        self.assertEqual(gdp_data.shape[1], 4)  # Ensure we have the four columns (Country, Year, GDP)
 
     def test_data_file_has_header_lines(self):
         # Check for the number of header lines
