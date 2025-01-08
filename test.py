@@ -19,10 +19,10 @@ class TestGdpVisualization(unittest.TestCase):
 
     # Data Checking Tests
     def test_data_file_has_two_columns_of_data(self):
-        # Ensure that the dataset has exactly two data columns (GDP, Year)
+        # Ensure we have the four columns
         file_path = 'final.dataset.xlsx'
         gdp_data = pd.read_excel(file_path)
-        self.assertEqual(gdp_data.shape[1], 4)  # Ensure we have the four columns (Country, Year, GDP)
+        self.assertEqual(gdp_data.shape[1], 4)  
 
     def test_data_file_has_header_lines(self):
         # Check for the number of header lines
@@ -42,7 +42,7 @@ class TestGdpVisualization(unittest.TestCase):
         # Ensure there are enough data points to fit a line
         file_path = 'final.dataset.xlsx'
         gdp_data = pd.read_excel(file_path)
-        self.assertGreater(len(gdp_data), 1)  # Should have more than 1 data point
+        self.assertGreater(len(gdp_data), 1)  
 
     def test_data_points_sufficiently_correlated(self):
         # Check if the data points are sufficiently correlated (simple correlation test)
