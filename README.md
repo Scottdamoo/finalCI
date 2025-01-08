@@ -3,7 +3,7 @@
 
 # Description
 
-this repository contains the code and analysis, and testing i done for the DAT5902 - final project. the final project explores GDP per capita across the Group 7 (G7) nations to ultimately analyse the relationship betweem 'international coopoeration' and 'economic growth'. 
+this repository contains the code, analysis, and testing I carried out for the DAT5902 - final project. the final project explores GDP per capita across the Group 7 (G7) nations to ultimately analyse the relationship betweem 'international coopoeration' and 'economic growth'. in asnwering my final hypothesis of “International economic cooperation fosters economic growth“
 my analysis includes:
 
 - data loading, load in relevant (cleaned) dataset
