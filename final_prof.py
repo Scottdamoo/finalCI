@@ -23,3 +23,14 @@ plt.legend()
 plt.grid(True)
 plt.show()
 plt.savefig('time_series')
+
+#graph 2: my second graph is a box plot to show volatility GDP per capita growth across the G7 countries
+
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='Country', y='GDP', data=gdp)
+plt.title('Distribution of GDP per Capita for G7 Countries (1990-2022)')
+plt.xlabel('Country')
+plt.ylabel('GDP per Capita ($)')
+plt.xticks(rotation=45)
+plt.show()
+plt.savefig('box_plot')
