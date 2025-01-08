@@ -34,3 +34,15 @@ plt.ylabel('GDP per Capita ($)')
 plt.xticks(rotation=45)
 plt.show()
 plt.savefig('box_plot')
+
+#graph 3 and 4: bar chart comparing gdp per captita of G7 countries in 1990 and 2022
+
+bar_1990 = gdp[gdp['Year'] == 1990]
+plt.figure(figsize=(10, 6))
+plt.bar(bar_1990['Country'], bar_1990['GDP'])
+plt.title('GDP per Capita for G7 Countries in 1990')
+plt.xlabel('Country')
+plt.ylabel('GDP per Capita ($)')
+plt.xticks(rotation=45)
+plt.show()
+plt.savefig('bar_chart1990')
