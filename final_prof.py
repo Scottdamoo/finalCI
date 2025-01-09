@@ -22,7 +22,7 @@ plt.ylabel('GDP per Capita ($)')
 plt.legend()
 plt.grid(True)
 plt.show()
-plt.savefig('time_series')
+plt.savefig('time_series', format='png')
 
 #graph 2: my second graph is a box plot to show volatility GDP per capita growth across the G7 countries
 
@@ -33,7 +33,7 @@ plt.xlabel('Country')
 plt.ylabel('GDP per Capita ($)')
 plt.xticks(rotation=45)
 plt.show()
-plt.savefig('box_plot')
+plt.savefig('box_plot', format='png')
 
 #graph 3 and 4: bar chart comparing gdp per captita of G7 countries in 1990 and 2022
 
@@ -45,7 +45,7 @@ plt.xlabel('Country')
 plt.ylabel('GDP per Capita ($)')
 plt.xticks(rotation=45)
 plt.show()
-plt.savefig('bar_chart1990')
+plt.savefig('bar_chart1990', format='png')
 
 bar_2022 = gdp[gdp['Year'] == 2022]
 plt.figure(figsize=(10, 6))
@@ -55,4 +55,4 @@ plt.xlabel('Country')
 plt.ylabel('GDP per Capita ($)')
 plt.xticks(rotation=45)
 plt.show()
-plt.savefig('bar_chart2022')
+plt.savefig('bar_chart2022', format='png')
